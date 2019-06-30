@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <style type="text/css"></style>
+</head>
+<body>
+        <script type="text/javascript">
+                var name = 'hello';
+                document.write(name.toLocaleUpperCase() + "<br >");
+                var sentence = 'good afternoon, mr mike.';
+                function titleCase(s) {  
+                var i, ss = s.toLowerCase().split(/\s+/);  
+                for (i = 0; i < ss.length; i++) {  
+                        ss[i] = ss[i].slice(0, 1).toUpperCase() + ss[i].slice(1);  
+                }  
+                return ss.join(' ');  
+                }  
+                document.write(titleCase(sentence) + "<br >");
+                var money = '￥20';
+                var num= money.replace(/[^0-9]/ig,"");
+                document.write(num); 
+        </script>
+        
+</body>
+</html>
